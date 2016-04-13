@@ -8,6 +8,8 @@ public class EasyCodeScannerExample : MonoBehaviour {
 	static string dataStr;
 	//public Renderer PlaneRender;
 	public Text nombreProducto;
+	public Text descripcionProducto;
+	public Text precio;
 	
 	void Start () {
 		dataStr = "";
@@ -37,11 +39,23 @@ public class EasyCodeScannerExample : MonoBehaviour {
 //			Application.Quit();
 //		}
 	
-		nombreProducto.text = dataStr;
+
+		switch (dataStr) {
+		case "7792378000562":
+			nombreProducto.text = "Gel de Alcohol Etilico Neutro MF";
+			descripcionProducto.text = "250cc";
+			precio.text = "16,00";
+			break;
+		case "7790250054276":
+			nombreProducto.text = "Elite Doble Hoja";
+			descripcionProducto.text = "100 Pañuelos - 22cmx21cm";
+			precio.text = "27,50";
+			break;
+		}
 	}
 
 	public void ShowCam(){
-		EasyCodeScanner.launchScanner( true, "Scanee un codigo de Barras", -1, true);
+		EasyCodeScanner.launchScanner( true, "", -1, true);
 	}
 
 

@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{AC3CD694-BCA8-C110-3D03-2FE2BEAEE895}") = "mayoritas", "Assembly-CSharp.csproj", "{8A1FBB78-4813-A8E6-CEC8-13BA7B4896A1}"
 EndProject
-Project("{AC3CD694-BCA8-C110-3D03-2FE2BEAEE895}") = "mayoritas", "Assembly-CSharp-Editor.csproj", "{C79C10F6-6231-61D8-F7C4-48762075AF44}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,10 +13,6 @@ Global
 		{8A1FBB78-4813-A8E6-CEC8-13BA7B4896A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8A1FBB78-4813-A8E6-CEC8-13BA7B4896A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8A1FBB78-4813-A8E6-CEC8-13BA7B4896A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C79C10F6-6231-61D8-F7C4-48762075AF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C79C10F6-6231-61D8-F7C4-48762075AF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C79C10F6-6231-61D8-F7C4-48762075AF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C79C10F6-6231-61D8-F7C4-48762075AF44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
