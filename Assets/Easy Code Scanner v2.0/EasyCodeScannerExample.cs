@@ -1,5 +1,5 @@
 using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.InteropServices;
 using System;
 using UnityEngine.UI;
@@ -10,6 +10,9 @@ public class EasyCodeScannerExample : MonoBehaviour {
 	public Text nombreProducto;
 	public Text descripcionProducto;
 	public Text precio;
+	public Image ImagenProducto;
+	public Sprite[] productos;
+	public InputField Cantidad;
 	
 	void Start () {
 		dataStr = "";
@@ -45,17 +48,30 @@ public class EasyCodeScannerExample : MonoBehaviour {
 			nombreProducto.text = "Gel de Alcohol Etilico Neutro MF";
 			descripcionProducto.text = "250cc";
 			precio.text = "16,00";
+			ImagenProducto.sprite = productos [1];
+			PlayerPrefs.SetString ("Nombre", "Gel de Alcohol Etilico Neutro MF");
+			PlayerPrefs.SetString ("Cantidad", Cantidad.text);
 			break;
 		case "7790250054276":
 			nombreProducto.text = "Elite Doble Hoja";
 			descripcionProducto.text = "100 Pañuelos - 22cmx21cm";
 			precio.text = "27,50";
+			ImagenProducto.sprite = productos[2];
+			PlayerPrefs.SetString ("Nombre", "Elite Doble Hoja");
+			PlayerPrefs.SetString ("Cantidad", Cantidad.text);
 			break;
 		}
 	}
 
 	public void ShowCam(){
 		EasyCodeScanner.launchScanner( true, "", -1, true);
+	}
+
+	public void Limpiar(){
+		nombreProducto.text = "";
+		descripcionProducto.text = "";
+		precio.text = "";
+		ImagenProducto.sprite = productos[0];
 	}
 
 
