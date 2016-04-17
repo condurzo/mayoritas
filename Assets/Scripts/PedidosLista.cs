@@ -8,14 +8,14 @@ public class PedidosLista : MonoBehaviour {
 	public GameObject ListaPrefab;
 	public Text Nombre;
 	public Text Cantidad;
+	public static string Nom;
+	public static string Cant;
 
 	public void AddLista () {
 	//Agregar al array Nombre + cantidad
-		Nombre.text = PlayerPrefs.GetString("Nombre");
-		Cantidad.text = PlayerPrefs.GetString ("Cantidad");
+		Nombre.text = Nom;//PlayerPrefs.GetString("Nombre");
+		Cantidad.text = Cant;
 
-		ListaPedidos.Add(PlayerPrefs.GetString("Cantidad"));
-		ListaPedidos.Add(PlayerPrefs.GetString("Nombre"));
 		GameObject go = Instantiate(ListaPrefab) as GameObject;
 		go.transform.parent = gameObject.transform;
 		}
@@ -23,6 +23,6 @@ public class PedidosLista : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 }

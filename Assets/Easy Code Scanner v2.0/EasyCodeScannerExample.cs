@@ -49,16 +49,16 @@ public class EasyCodeScannerExample : MonoBehaviour {
 			descripcionProducto.text = "250cc";
 			precio.text = "16,00";
 			ImagenProducto.sprite = productos [1];
-			PlayerPrefs.SetString ("Nombre", "Gel de Alcohol Etilico Neutro MF");
-			PlayerPrefs.SetString ("Cantidad", Cantidad.text);
+			PedidosLista.Nom = nombreProducto.text;
+			PedidosLista.Cant = precio.text;
 			break;
 		case "7790250054276":
 			nombreProducto.text = "Elite Doble Hoja";
 			descripcionProducto.text = "100 Pañuelos - 22cmx21cm";
 			precio.text = "27,50";
 			ImagenProducto.sprite = productos[2];
-			PlayerPrefs.SetString ("Nombre", "Elite Doble Hoja");
-			PlayerPrefs.SetString ("Cantidad", Cantidad.text);
+			PedidosLista.Nom = nombreProducto.text;
+			PedidosLista.Cant = precio.text;
 			break;
 		}
 	}

@@ -7,14 +7,14 @@ public class MenuBtn : MonoBehaviour {
 
 	public void OpenMenu () {
 		if (!states) {
-			iTween.MoveTo (MenuGO, iTween.Hash ("x", 55, "time", .4, "loopType", "none"
+			iTween.MoveTo (MenuGO, iTween.Hash ("x", 115, "time", .4, "loopType", "none"
 			, "delay", 0, "easeType", "easeInOutQuad"));
 			states = true;
 		}
 	}
 	public void CloseMenu(){
 		if (states) {
-			iTween.MoveTo (MenuGO, iTween.Hash ("x", -95, "time", .4, "loopType", "none"
+			iTween.MoveTo (MenuGO, iTween.Hash ("x", -120, "time", .4, "loopType", "none"
 				, "delay", 0, "easeType", "easeInOutQuad"));
 			states = false;
 		}
