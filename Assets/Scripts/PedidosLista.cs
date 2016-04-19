@@ -8,12 +8,15 @@ public class PedidosLista : MonoBehaviour {
 	public GameObject ListaPrefab;
 	public Text Nombre;
 	public Text Cantidad;
+	public Text Precio;
 	public static string Nom;
 	public static string Cant;
+	public static string Pre;
 
 	public void AddLista () {
 	//Agregar al array Nombre + cantidad
 		Nombre.text = Nom;//PlayerPrefs.GetString("Nombre");
+		Precio.text = Pre;
 		Cantidad.text = Cant;
 
 		GameObject go = Instantiate(ListaPrefab) as GameObject;
@@ -21,8 +24,7 @@ public class PedidosLista : MonoBehaviour {
 		}
 
 
-	// Update is called once per frame
-	void Update () {
-		
+	public void EnviarBtn () {
+		Application.LoadLevel ("Home");
 	}
 }

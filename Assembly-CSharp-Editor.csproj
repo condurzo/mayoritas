@@ -45,19 +45,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\MaterialUI\Editor\CheckboxConfigEditor.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\EZAnimEditor.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\MaterialUIEditorTools.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\RectTransformSnapEditor.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\RippleConfigEditor.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\ScreenConfigEditor.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\ShadowGenEditor.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\SnapButtonToTextEditor.cs" />
-     <Compile Include="Assets\MaterialUI\Editor\TexturePostProcessor.cs" />
+     <Compile Include="Assets\MegaBook\Scripts\Editor\MBComplexPageEditor.cs" />
+     <Compile Include="Assets\MegaBook\Scripts\Editor\MegaBookBuilderEditor.cs" />
+     <Compile Include="Assets\MegaBook\Scripts\Editor\MegaBookDynamicMeshEditor.cs" />
+     <Compile Include="Assets\MegaBook\Scripts\Editor\MegaBookPageAttachEditor.cs" />
+     <Compile Include="Assets\MegaBook\Scripts\Editor\MegaBookUndo.cs" />
+     <None Include="Assets\MegaBook\ReadMe.txt" />
      <None Include="Assets\Easy Code Scanner v2.0\CHANGES.txt" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Easy Code Scanner v2.0\README.txt" />
-     <None Include="Assets\MaterialUI\Fonts\NOTICE.txt" />
  <Reference Include="UnityEngine.Networking">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>

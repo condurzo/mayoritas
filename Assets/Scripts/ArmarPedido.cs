@@ -15,12 +15,14 @@ public class ArmarPedido : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-//		if ((Nombre.text == "Nombre")||(Cantidad.text == "")) {
-//			OkBtn.interactable = false;
-//			OkBtn.GetComponent<Image> ().color = Color.red;
-//		} else {
-//			OkBtn.interactable = true;
-//			OkBtn.GetComponent<Image> ().color = Color.green;
-//		}
+		PedidosLista.Cant = Cantidad.text;
+
+		if ((Nombre.text == "Nombre")||(Cantidad.text == "")) {
+			OkBtn.interactable = false;
+			OkBtn.GetComponent<Image> ().color = Color.red;
+		} else {
+			OkBtn.interactable = true;
+			OkBtn.GetComponent<Image> ().color = Color.green;
+		}
 	}
 }
