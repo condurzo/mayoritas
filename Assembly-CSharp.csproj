@@ -65,7 +65,9 @@
      <Compile Include="Assets\Scripts\GoToPromos.cs" />
      <Compile Include="Assets\Scripts\MenuBtn.cs" />
      <Compile Include="Assets\Scripts\PedidosLista.cs" />
+     <Compile Include="Assets\Scripts\SearchSeccion.cs" />
      <Compile Include="Assets\Scripts\SetHome.cs" />
+     <Compile Include="Assets\Scripts\SetearProducto.cs" />
      <Compile Include="Assets\Scripts\uGUITools.cs" />
      <Compile Include="Assets\iTween\Sample\MoveSample.cs" />
      <Compile Include="Assets\iTween\Sample\RotateSample.cs" />

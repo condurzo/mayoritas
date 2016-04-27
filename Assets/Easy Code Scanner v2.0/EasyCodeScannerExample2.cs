@@ -41,28 +41,104 @@ public class EasyCodeScannerExample2 : MonoBehaviour {
 //			Application.Quit();
 //		}
 	
-
-		switch (dataStr) {
-		case "7792378000562":
-			nombreProducto.text = "Gel de Alcohol Etilico Neutro MF";
-			descripcionProducto.text = "250cc";
+		if (SetearProducto.UsarNombre) {
+			switch (SetearProducto.NombreProducto) {
+			case "Ayudin 1Lt":
+				nombreProducto.text = "Lavandina Ayudin";
+				descripcionProducto.text = "Maxima Pureza - 1 Litro";
+				precio.text = "16,00";
+				ImagenProducto.sprite = productos [3];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+			
+			case "Ayudin 2Lt":
+			nombreProducto.text = "Lavandina Ayudin";
+			descripcionProducto.text = "Maxima Pureza - 2 Litros";
 			precio.text = "16,00";
-			ImagenProducto.sprite = productos [1];
+			ImagenProducto.sprite = productos [4];
 			PedidosLista.Nom = nombreProducto.text;
 			PedidosLista.Pre = precio.text;
+			PedidosLista.Desc = descripcionProducto.text;
 			break;
-		case "7790250054276":
-			nombreProducto.text = "Elite Doble Hoja";
-			descripcionProducto.text = "100 Pañuelos - 22cmx21cm";
-			precio.text = "27,50";
-			ImagenProducto.sprite = productos[2];
-			PedidosLista.Nom = nombreProducto.text;
-			PedidosLista.Pre = precio.text;
-			break;
+
+			case "Ayudin Gla 1Lt":
+				nombreProducto.text = "Lavandina Ayudin";
+				descripcionProducto.text = "Pureza del Galciar - 1 Litro";
+				precio.text = "16,00";
+				ImagenProducto.sprite = productos [5];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+
+			case "Ayudin Multi 4Lt":
+				nombreProducto.text = "Lavandina Ayudin";
+				descripcionProducto.text = "MultiSuperficies - 4 Litros";
+				precio.text = "16,00";
+				ImagenProducto.sprite = productos [6];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+			case "Querubin Lav 1Lt":
+				nombreProducto.text = "Lavandina Querubin";
+				descripcionProducto.text = "Lavanda - 1 Litro";
+				precio.text = "16,00";
+				ImagenProducto.sprite = productos [7];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+			case "Querubin Pre 1Lt":
+				nombreProducto.text = "Lavandina Querubin";
+				descripcionProducto.text = "Premium - 1 Litro";
+				precio.text = "16,00";
+				ImagenProducto.sprite = productos [8];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+			case "Querubin Pre 4Lt":
+				nombreProducto.text = "Lavandina Querubin";
+				descripcionProducto.text = "Premium - 4 Litros";
+				precio.text = "16,00";
+				ImagenProducto.sprite = productos [9];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+			
+		}
+
+		} else {
+			switch (dataStr) {
+			case "7792378000562":
+				nombreProducto.text = "Gel de Alcohol Etilico Neutro MF";
+				descripcionProducto.text = "250cc";
+				precio.text = "16,00";
+				ImagenProducto.sprite = productos [1];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+			case "7790250054276":
+				nombreProducto.text = "Elite Doble Hoja";
+				descripcionProducto.text = "100 Pañuelos - 22cmx21cm";
+				precio.text = "27,50";
+				ImagenProducto.sprite = productos [2];
+				PedidosLista.Nom = nombreProducto.text;
+				PedidosLista.Pre = precio.text;
+				PedidosLista.Desc = descripcionProducto.text;
+				break;
+			}
 		}
 	}
 
 	public void ShowCam(){
+		SetearProducto.UsarNombre = false;
+
 		EasyCodeScanner.launchScanner( true, "", -1, true);
 	}
 
