@@ -9,8 +9,8 @@ public class SetHome : MonoBehaviour {
 
 	void Update(){
 		Contador += Time.deltaTime;
-		if (Contador >= 3) {
-			Application.LoadLevel ("Home");
+		if (Contador >= 2.5f) {
+			Application.LoadLevel ("SplashE");
 		}
 	}
 	
