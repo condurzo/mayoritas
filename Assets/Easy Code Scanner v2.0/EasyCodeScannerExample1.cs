@@ -43,19 +43,50 @@ public class EasyCodeScannerExample1 : MonoBehaviour {
 	
 
 		switch (dataStr) {
-		case "7792378000562":
-			nombreProducto.text = "Gel de Alcohol Etilico Neutro MF";
-			descripcionProducto.text = "250cc";
+		case "7790895000430":
+			nombreProducto.text = "Coca Cola";
+			descripcionProducto.text = "Gaseosa x1,5L";
 			precio.text = "16,00";
 			ImagenProducto.sprite = productos [1];
-
+			PedidosLista.Nom = nombreProducto.text;
+			PedidosLista.Pre = precio.text;
+			PedidosLista.Desc = descripcionProducto.text;
 			break;
-		case "7790250054276":
-			nombreProducto.text = "Elite Doble Hoja";
-			descripcionProducto.text = "100 Pañuelos - 22cmx21cm";
-			precio.text = "27,50";
-			ImagenProducto.sprite = productos[2];
-
+		case "7790315000422":
+			nombreProducto.text = "Villavicencio";
+			descripcionProducto.text = "Agua Mineral x2L";
+			precio.text = "20,50";
+			ImagenProducto.sprite = productos [2];
+			PedidosLista.Nom = nombreProducto.text;
+			PedidosLista.Pre = precio.text;
+			PedidosLista.Desc = descripcionProducto.text;
+			break;
+		case "7790950133318":
+			nombreProducto.text = "Terma Serrano";
+			descripcionProducto.text = "Bebida sin alcohol a base de hierbas x1,35L";
+			precio.text = "25,00";
+			ImagenProducto.sprite = productos [3];
+			PedidosLista.Nom = nombreProducto.text;
+			PedidosLista.Pre = precio.text;
+			PedidosLista.Desc = descripcionProducto.text;
+			break;
+		case "7791540047862":
+			nombreProducto.text = "Dada Malbec";
+			descripcionProducto.text = "Vino tinto Malbec x750ml";
+			precio.text = "27,00";
+			ImagenProducto.sprite = productos [4];
+			PedidosLista.Nom = nombreProducto.text;
+			PedidosLista.Pre = precio.text;
+			PedidosLista.Desc = descripcionProducto.text;
+			break;
+		case "7794900000866":
+			nombreProducto.text = "Hileret Clasico";
+			descripcionProducto.text = "Edulcorante x250ml";
+			precio.text = "15,00";
+			ImagenProducto.sprite = productos [5];
+			PedidosLista.Nom = nombreProducto.text;
+			PedidosLista.Pre = precio.text;
+			PedidosLista.Desc = descripcionProducto.text;
 			break;
 		}
 	}
